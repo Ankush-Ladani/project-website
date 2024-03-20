@@ -44,8 +44,8 @@ function Slider({ temperature = 40 }) {
   // }, []);
 
   return (
-    <div className="text-center absolute">
-      <h1 className="relative top-20">
+    <div className="text-center h-36 sm:overflow-y-hidden">
+      <h1 className="sm:relative sm:top-20">
         {temperature?.toFixed(2)}
         <sup>.</sup>C
       </h1>

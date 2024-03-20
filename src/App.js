@@ -106,8 +106,8 @@ function App() {
       </div>
 
       {/* INPUT SECTION */}
-      <div className="grid sm:grid-cols-12 mt-4 grid-cols-12 sm:mt-16">
-        <div className=" sm:col-start-3 sm:col-span-4 col-span-12">
+      <div className="grid sm:grid-cols-12 mt-4 grid-cols-12 sm:mt-0">
+        <div className=" sm:col-start-3 sm:col-span-3 col-span-12">
           <div className="text-center">
             <h1 className="font-bold text-xl sm:text-3xl">
               High Setpoint - {highSetPoint == "" ? 0 : highSetPoint}
@@ -128,7 +128,10 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="sm:col-span-4 col-span-12 sm:mt-0 mt-5">
+        <div className="sm:h-auto mt-4 sm:col-span-2 sm:mt-0 col-span-12">
+          <Slider />
+        </div>
+        <div className="sm:col-span-3 col-span-12 sm:mt-0">
           <div className="text-center">
             <h1 className="font-bold text-xl sm:text-3xl">
               Low Setpoint - {lowSetPoint == "" ? 0 : lowSetPoint}
@@ -151,9 +154,9 @@ function App() {
         </div>
       </div>
 
-      <div className="flex mt-10 justify-center">
+      {/* <div className="flex mt-10 justify-center">
         <Slider />
-      </div>
+      </div> */}
     </div>
   );
 }
