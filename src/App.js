@@ -114,7 +114,7 @@ function App() {
             </h1>
             <div className="">
               <input
-                className="mt-3 p-3 bg-gray-400 rounded-lg mr-3"
+                className="mt-3 p-3 bg-gray-400 sm-w-auto w-28 rounded-lg mr-3"
                 onChange={(e) => setHighSetPoint(e.target.value)}
                 type="number"
                 value={highSetPoint}
@@ -122,7 +122,7 @@ function App() {
               <button
                 onClick={handleChangeInHighSetPoint}
                 type="submit"
-                className="bg-green-400 p-3 w-32 rounded-lg hover:bg-green-500">
+                className="bg-green-400 p-3 sm:w-32 w-16 rounded-lg sm:mt-0 mt-3 hover:bg-green-500">
                 Set
               </button>
             </div>
@@ -138,7 +138,7 @@ function App() {
             </h1>
             <div className="">
               <input
-                className="mt-3 p-3 bg-gray-400 rounded-lg mr-3"
+                className="mt-3 p-3 bg-gray-400 rounded-lg mr-3 sm-w-auto w-28"
                 onChange={(e) => setLowSetPoint(e.target.value)}
                 type="number"
                 value={lowSetPoint}
@@ -146,7 +146,7 @@ function App() {
               <button
                 onClick={handleChangeInLowSetPoint}
                 type="submit"
-                className="bg-green-400 p-3 w-32 rounded-lg hover:bg-green-500">
+                className="sm:w-32 w-16 bg-green-400 p-3 sm:mt-0 mt-3 rounded-lg hover:bg-green-500">
                 Set
               </button>
             </div>
