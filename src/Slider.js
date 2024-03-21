@@ -3,10 +3,7 @@ import { getDatabase, ref, onValue, set } from "firebase/database";
 import { useEffect } from "react";
 import Roundy from "roundy";
 
-function Slider({ temperature = 40 }) {
-  const [highSetPoint, sethighSetPoint] = React.useState(30);
-  const [lowSetPoint, setLowSetPoint] = React.useState(20);
-
+function Slider({ temperature = 0 }) {
   // useEffect(() => {
   //   const db = getDatabase();
   //   set(ref(db, '/test/highSetPoint'), Number(highSetPoint));
@@ -16,14 +13,6 @@ function Slider({ temperature = 40 }) {
   //   const db = getDatabase();
   //   set(ref(db, '/test/lowSetPoint'), Number(lowSetPoint));
   // }, [lowSetPoint]);
-
-  const highSetPointFunc = (e) => {
-    sethighSetPoint(e.target.value);
-  };
-
-  const lowSetPointFunc = (e) => {
-    setLowSetPoint(e.target.value);
-  };
 
   // useEffect(() => {
   //   const db = getDatabase();
